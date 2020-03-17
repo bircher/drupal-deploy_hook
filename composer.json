@@ -1,0 +1,12 @@
+{
+    "name": "drupal/deploy_hook",
+    "description": "Provides a drush command to run deploy hooks (like post_update_NAME hooks but ran after drush cim)",
+    "type": "drupal-module",
+    "extra": {
+        "drush": {
+            "services": {
+                "drush.services.yml": "^10"
+            }
+        }
+    }
+}

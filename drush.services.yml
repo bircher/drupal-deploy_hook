@@ -1,0 +1,6 @@
+services:
+  deploy_hook.commands:
+    class: Drupal\deploy_hook\Commands\DeployHookCommands
+    arguments: ["@deploy_hook.deploy_registry"]
+    tags:
+      - { name: drush.command }

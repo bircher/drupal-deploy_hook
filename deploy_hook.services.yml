@@ -1,0 +1,7 @@
+services:
+  deploy_hook.deploy_registry:
+    class: Drupal\deploy_hook\DeployUpdateRegistry
+    factory: ['@deploy_hook.update_registry_factory', create]
+  deploy_hook.update_registry_factory:
+    class: Drupal\deploy_hook\UpdateRegistryFactory
+    parent: container.trait

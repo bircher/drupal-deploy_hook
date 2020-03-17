@@ -1,0 +1,6 @@
+name: Deploy Hook
+type: module
+description: Provides a drush command to run deploy hooks (like post_update_NAME hooks but ran after drush cim)
+package: Other
+core: 8.x
+core_version_requirement: ^8 || ^9
